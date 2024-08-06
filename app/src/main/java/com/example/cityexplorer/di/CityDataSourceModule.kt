@@ -18,7 +18,6 @@ class CityDataSourceModule {
     @Provides
     @Singleton
     fun provideCityDataSource(
-        context: Context,
         cityJsonParser: CityJsonParser
     ): CityDataSource = CityDataSourceImp(cityJsonParser)
 

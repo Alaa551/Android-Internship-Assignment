@@ -6,8 +6,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cityexplorer.data.model.City
 import com.example.cityexplorer.databinding.CityItemBinding
-import com.example.cityexplorerapp.view.adapter.CityDiffCallback
-import com.example.cityexplorerapp.view.adapter.OnCityClickListener
 
 
 class CityAdapter(
