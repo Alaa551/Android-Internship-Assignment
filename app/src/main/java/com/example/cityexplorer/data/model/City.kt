@@ -1,4 +1,4 @@
-package com.example.cityexplorer.data.local.model
+package com.example.cityexplorer.data.model
 
 
 data class City(
