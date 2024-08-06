@@ -33,7 +33,7 @@ class CityViewModel @Inject constructor(
 
     fun filterCities(prefix: String) {
         viewModelScope.launch {
-            _filteredCities.value = cityRepository.filterCitiesByPrefix(prefix)
-        }
+            val cities= cityRepository.filterCitiesByPrefix(prefix)
+            _filteredCities.postValue(cities.sortedWith(compareBy({ it.name }, { it.country })))        }
     }
 }

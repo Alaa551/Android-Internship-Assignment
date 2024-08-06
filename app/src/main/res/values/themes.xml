@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.CityExplorer" parent="Base.Theme.CityExplorer" />
+
+    <style name="searchStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/black</item>
+    </style>
 </resources>
