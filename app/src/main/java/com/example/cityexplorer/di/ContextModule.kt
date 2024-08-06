@@ -1,7 +1,7 @@
 package com.example.cityexplorer.di
 
+import android.app.Application
 import android.content.Context
-import com.example.cityexplorer.data.parser.CityJsonParser
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -10,9 +10,12 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object JsonParserModule {
+object ContextModule {
 
     @Provides
     @Singleton
-    fun provideJsonParser(context: Context): CityJsonParser = CityJsonParser(context)
+    fun provideContext(application: Application): Context =
+         application.applicationContext
+
+
 }
